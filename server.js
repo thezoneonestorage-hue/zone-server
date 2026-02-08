@@ -20,6 +20,7 @@ const serviceRoutes = require("./routes/serviceRoutes");
 const contactRoutes = require("./routes/contactRoutes");
 const faqRoutes = require("./routes/faqRoutes");
 const statisticsRoutes = require("./routes/statisticsRoutes");
+const aboutRoutes = require("./routes/aboutRoutes");
 
 // Add this line with your other routes
 
@@ -81,6 +82,7 @@ app.use("/api/v1/services", serviceRoutes);
 app.use("/api/v1/contact", contactRoutes);
 app.use("/api/v1/faqs", faqRoutes);
 app.use("/api/v1/statistics", statisticsRoutes);
+app.use("/api/v1/about", aboutRoutes);
 
 // Health check endpoint
 app.get("/health", (req, res) => {
